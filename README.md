@@ -7,45 +7,23 @@ DATE: Jan. 20th, 2023
 ## Directory Structure
 ```
 .
-├── Cargo.lock
+├── README.md
 ├── Cargo.toml
 ├── PNG
-│   └── WASM-Fractal.png
-├── README.md
-├── pkg
-│   ├── README.md
-│   ├── package.json
-│   ├── wasm_fractal.d.ts
-│   ├── wasm_fractal.js
-│   ├── wasm_fractal_bg.js
-│   ├── wasm_fractal_bg.wasm
-│   └── wasm_fractal_bg.wasm.d.ts
 ├── src
-│   ├── julia.rs
 │   ├── lib.rs
 │   ├── logic.rs
+│   ├── julia.rs
 │   ├── mandelbrot.rs
 │   └── utils.rs
-├── target
-│   ├── CACHEDIR.TAG
-│   ├── debug
-│   ├── release
-│   └── wasm32-unknown-unknown
 └── www
-    ├── LICENSE-APACHE
-    ├── LICENSE-MIT
-    ├── README.md
     ├── bootstrap.js
-    ├── dist
-    ├── index.html
     ├── index.js
-    ├── node_modules
-    ├── package-lock.json
-    ├── package.json
+    ├── index.html
+    ├── dist
     ├── public
+    ├── package.json
     └── webpack.config.js
-
-11 directories, 26 files
 ```
 ---
 ```
