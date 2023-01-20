@@ -308,7 +308,7 @@ eval("// A dependency graph that contains any wasm must all be imported\n// asyn
 /******/ 		
 /******/ 		
 /******/ 		var wasmImportObjects = {
-/******/ 			"../pkg/wasm_mandelbrot_bg.wasm": function() {
+/******/ 			"../pkg/wasm_fractal_bg.wasm": function() {
 /******/ 				return {
 /******/ 		
 /******/ 				};
@@ -316,8 +316,8 @@ eval("// A dependency graph that contains any wasm must all be imported\n// asyn
 /******/ 		};
 /******/ 		
 /******/ 		var wasmModuleMap = {
-/******/ 			"pkg_wasm_mandelbrot_js": [
-/******/ 				"../pkg/wasm_mandelbrot_bg.wasm"
+/******/ 			"pkg_wasm_fractal_js": [
+/******/ 				"../pkg/wasm_fractal_bg.wasm"
 /******/ 			]
 /******/ 		};
 /******/ 		
@@ -337,7 +337,7 @@ eval("// A dependency graph that contains any wasm must all be imported\n// asyn
 /******/ 					promises.push(installedWasmModuleData);
 /******/ 				else {
 /******/ 					var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 					var req = fetch(__webpack_require__.p + "" + {"pkg_wasm_mandelbrot_js":{"../pkg/wasm_mandelbrot_bg.wasm":"10fee61735167e9e9cad"}}[chunkId][wasmModuleId] + ".module.wasm");
+/******/ 					var req = fetch(__webpack_require__.p + "" + {"pkg_wasm_fractal_js":{"../pkg/wasm_fractal_bg.wasm":"e0b38640ce42ec2ea678"}}[chunkId][wasmModuleId] + ".module.wasm");
 /******/ 					var promise;
 /******/ 					if(importObject && typeof importObject.then === 'function' && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 						promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
