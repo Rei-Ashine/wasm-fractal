@@ -44,3 +44,8 @@ DATE: Jan. 20th, 2023
  Total                  21         5320         4840          301          179
 ===============================================================================
 ```
+
+## Reference
+- [『実践Rustプログラミング入門』](https://www.shuwasystem.co.jp/book/9784798061702.html)
+
+![ref1](https://www.shuwasystem.co.jp//images/book/528321.jpg)
